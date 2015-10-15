@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Effective Capture</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        margin: 0;
+      }
+      .content {
+        padding: 10px;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        padding-left: 10px;
+        font-size: 18px;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <input id="input" type="text">
+    </div>
+  </body>
+</html>
