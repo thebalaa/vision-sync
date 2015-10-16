@@ -15,13 +15,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // get existing data
   chrome.storage.sync.get(function(data){
-    console.log(data);
+    //console.log(data);
     if('items' in data)
       localData = data;
     else {
       data['items'] = [];
       localData = data;
     }
+  });
+
+  //register the open_edit_view command to trigger creation of a new tab
+  chrome.commands.onCommand.addListener(function (command) {
+    console.log(command);
   });
 
 });

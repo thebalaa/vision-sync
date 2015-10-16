@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="vision-sync">
+<head>
+<script src="node_modules/angular/angular.js"></script>
+<script src="editor.js"></script>
+</head>
+<body ng-controller="visionSyncController">
+  <table>
+    <thead>
+      <th>Timestamp</th><th>Content</th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in data.items">
+      <td> {{ item.timestamp}}</td><td> {{ item.content }} </td>
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "vision-sync",
+  "version": "0.0.1",
+  "description": "Chrome Extension for keeping your organization's vision in-sync",
+  "main": "''",
+  "dependencies": {
+    "angular": "^1.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebalaa/vision-sync.git"
+  },
+  "keywords": [
+    "idea",
+    "management"
+  ],
+  "author": "Mohamad Balaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebalaa/vision-sync/issues"
+  },
+  "homepage": "https://github.com/thebalaa/vision-sync#readme"
+}
