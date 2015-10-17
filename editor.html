@@ -10,8 +10,18 @@
       <th>Timestamp</th><th>Content</th>
     </thead>
     <tbody>
-    <tr ng-repeat="item in data.items">
-      <td> {{ item.timestamp}}</td><td> {{ item.content }} </td>
+    <tr ng-repeat="item in data.items | filter: {type:'url'}">
+      <td> {{ item.timestamp}}</td><td> <a href="{{ item.content }}">{{item.content}}</a> </td>
+    </tr>
+  </tbody>
+  </table>
+  <table>
+    <thead>
+      <th>Timestamp</th><th>Content</th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in data.items | filter: {type:'note'}">
+      <td> {{ item.timestamp}}</td><td>{{item.content}}</td>
     </tr>
   </tbody>
   </table>

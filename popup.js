@@ -31,11 +31,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
 });
 
-
+chrome.runtime.onMessage.addListener(function(message, sender, sendresponse){
+  save(message);
+  sendresponse();
+});
 
 function save(content) {
   var timestamp = new Date();
-  var entry = {content:content, timestamp: String(timestamp)};
+  var entry = {content:content, timestamp: String(timestamp), type:'note'};
   localData['items'].push(entry);
   chrome.storage.sync.set({'items':localData['items']});
 }
