@@ -14,12 +14,13 @@
     "_execute_browser_action": {
             "suggested_key": {
               "mac": "Alt+J",
-              "linux": "Ctrl+Shift+J"
+              "linux": "Alt+J"
             }
           },
           "open_edit_view": {
             "suggested_key": {
-              "mac": "Command+Shift+E"
+              "mac": "Command+Shift+E",
+              "linux": "Ctrl+Shift+E"
             },
             "description": "Open vision-sync dashboard"
           }

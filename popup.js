@@ -3,6 +3,8 @@ var input, localData;
 document.addEventListener('DOMContentLoaded', function(){
 
   input = document.querySelector('#input');
+  // linux doesn't autofocus the input field
+  input.focus();
 // setup enter key listener
   input.addEventListener('keypress', function(e){
     if (e.keyCode === 13){
